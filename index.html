@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--link rel="stylesheet" href="style.css" /-->
+        <!--Use this if it has a separate CSS File -->
+        <title>Welcome To Waai Fu site.</title>
+        <div class="boxtext-head">
+            <font size="5px">
+                <img src="/source/assets/tiger_sym.png" width="24" />
+                <b>Welcome to Waai Fu site</b>
+                <img src="/source/assets/tiger_sym.png" width="24" />
+            </font>
+        </div>
+        <hr />
+        <style>
+            @font-face {
+    font-family: sitefont;
+    src: url("/source/assets/font.ttf"), format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: sitefont-bold;
+    src: url("/source/assets/font_bold.ttf"), format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-color: #ffffdc7e;
+    background-image: url("/source/assets/bkg.png");
+    background-attachment: fixed;
+    background-size: 100px;
+    font-family: sitefont, sitefont-bold, Arial, sans-serif;
+}
+b,
+strong {
+    font-family: sitefont-bold;
+}
+hr {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: none;
+    border-color: #df9e50;
+    background-color: #df9e50;
+    height: 6px;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.gallery {
+    margin: 15px;
+    border: 5px solid #c18439;
+    border-radius: 2px;
+    float: left;
+    width: 180px;
+    background-color: #baad85;
+    transition: background-color, 
+    0.5s ease-in;
+}
+
+div.gallery:hover {
+    border: 5px solid #ffdf93;
+    background-color: #ffdf93;
+    transition:
+        background-color,
+        0.5s ease-in;
+    color: #5c5234;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    border: 15px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+.boxtext {
+    text-align: center;
+    border: 3px solid #df9e50;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px;
+    color: white;
+    background-color: #492900;
+    border-radius: 3px;
+}
+.boxtext-noncenter {
+    border: 3px solid #df9e50;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 100;
+    margin: 0px;
+    color: white;
+    background-color: #492900;
+    border-radius: 3px;
+}
+
+.boxtext-head {
+    text-align: center;
+    border: 3px solid #df9e50;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0px;
+    color: #261a00;
+    background-color: #ffdf93;
+    border-radius: 3px;
+}
+p {
+    word-break: keep-all;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+}
+a:hover {
+    color: #feb968;
+}
+.boxtext-singlets-left {
+    text-align: left;
+    border: 3px solid #df9e50;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 3px;
+    color: white;
+    background-color: #492900;
+    border-radius: 3px;
+    float: left;
+   
+    max-height: 60%;
+}
+.boxtext-singlets-right {
+    text-align: right;
+    border: 3px solid #df9e50;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 3px;
+    color: white;
+    background-color: #492900;
+    border-radius: 3px;
+    float: right;
+    max-height: 60%;
+}
+.boxtext-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    background-color: #c8a674;
+    text-align: center;
+    padding: 10px;
+    border-radius: 3px;
+    margin-bottom: -20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.bio-data {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 3px solid #df9e50;
+    border-radius: 3px;
+    background-color: #492900;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: white;
+}
+
+label {
+    text-align: left;
+    width: 250px;
+    color: white;
+}
+
+span {
+    padding-left: 10px;
+    text-align: right;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="boxtext">
+            <p>
+                This site was created to honour Waai Fu for her service to
+                Rhodes Island and Lungmen.
+            </p>
+        </div>
+        <br />
+        <div class="image-container">
+            <div class="gallery">
+                <a target="_blank" href="/source/assets/wf_e0-1.png">
+                    <img
+                        src="/source/assets/wf_e0-1.png"
+                        alt="Waai Fu E1-0"
+                        width="600"
+                        height="400"
+                    />
+                </a>
+                <div class="desc">Waai Fu Elite 0 to 1 ingame art.</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="/source/assets/wf_e2.png">
+                    <img
+                        src="/source/assets/wf_e2.png"
+                        alt="Waai Fu E2"
+                        width="600"
+                        height="400"
+                    />
+                </a>
+                <div class="desc">Waai Fu Elite 2 ingame art.</div>
+            </div>
+        </div>
+        <div class="boxtext">
+            <p>
+                <i
+                    >Is this Rhodes Island? Nice to meet you. I'm Waai Fu, your
+                    new part-timer. Please don't go easy on me. I can handle
+                    anything you ask of me.</i
+                >
+            </p>
+        </div>
+        <br />
+        <div class="bio-data">
+            <font
+                style="
+                    font-size: 190%;
+                    text-align: center;
+                    color: white;
+                    padding-bottom: 10px;
+                "
+            >
+                <b>Bio Data</b>
+            </font>
+            <div class="item">
+                <label for="name">Name</label>
+                <span>Waai Fu</span>
+            </div>
+            <div class="item">
+                <label for="age">Gender</label>
+                <span>Female</span>
+            </div>
+            <div class="item">
+                <label for="name">Height</label>
+                <span>162 cm</span>
+            </div>
+            <div class="item">
+                <label for="age">Status</label>
+                <span>Active</span>
+            </div>
+            <div class="item">
+                <label for="age">Combat Experience</label>
+                <span>14 Years</span>
+            </div>
+            <div class="item">
+                <label for="name">Race</label>
+                <span>Panthera Tigris Sumatrae</span>
+            </div>
+            <div class="item">
+                <label for="age">Place Of Birth</label>
+                <span>Yan</span>
+            </div>
+            <div class="item">
+                <label for="age">Related Person(s)</label>
+                <span>Lee, Aak, Hung, Jaye, Huai</span>
+            </div>
+        </div>
+        <br />
+        <div class="boxtext-noncenter">
+            <p>
+                <font size="5px"> <strong>About her</strong> </font><br />
+                <br />
+                Waai Fu is a university student from Lungmen, serving Rhodes
+                Island from the first batch of employees hired under a secret
+                Lungmen-Rhodes Island commercial agreement. On the
+                recommendation of a certain firm, she took a battery of tests
+                that showed scores wildly inconsistent with her stated identity.
+                She clearly has substantial combat experience. Several
+                investigations are ongoing.<br />
+                <br />
+                <font size="5px"> <strong>Clinical analysis</strong></font
+                ><br />
+                <br />
+                Imaging tests reveal clear, normal outlines of internal organs,
+                and no abnormal shadows have been detected. Originium granules
+                have not been detected in the circulatory system and there are
+                no other signs of infection. At this time, this operator can be
+                confirmed to be uninfected.<br />
+                <br />
+                [Cell-Originium Assimilation]<br />
+                0% <b>[NOT INF]</b><br />
+                Operator Waai Fu shows no signs of Oripathy infections.<br />
+                <br />
+                [Blood Originium-Crystal Density]<br />
+                0.13u/L <b>[NONE]</b><br />
+                <br />
+                Operator Waai Fu rarely interacts with Originium or its
+                byproducts, and has a healthier physique than the average
+                citizen. Although there is no relationship between one's
+                physique and susceptibility to Oripathy...<br />
+                <br />
+                <font size="7px">&#8220;</font><br />
+                <font size="5px">
+                    Hey, this young lady can jump between buildings and punch
+                    through a wall with her bare fists. Makes sense she's in
+                    good shape, eh?</font
+                ><br />
+                <br /><font size="7px">&#8221;</font><br />
+                <font size="3px"
+                    >--<i>Mr. Aak, who happened to pass by.</i></font
+                >
+            </p>
+        </div>
+        <br />
+        <div class="boxtext-head">
+            <font size="5">
+                <img src="/source/assets/tiger_sym.png" width="24" />
+                <b>Real Life Animal</b>
+                <img src="/source/assets/tiger_sym.png" width="24" />
+            </font>
+        </div>
+        <br />
+        <div class="image-container">
+            <div class="gallery">
+                <a target="_blank" href="/source/assets/irl_img.jpg">
+                    <img
+                        src="/source/assets/irl_img.jpg"
+                        alt="IRL Waai Fu"
+                        width="600"
+                        height="400"
+                    />
+                </a>
+                <div class="desc">
+                    Sumantran Tiger, an animal she was based on.
+                </div>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="/source/assets/irl_img2.jpg">
+                    <img
+                        src="/source/assets/irl_img2.jpg"
+                        alt="IRL Waai Fu in habitat"
+                        width="600"
+                        height="400"
+                    />
+                </a>
+                <div class="desc">Sumantran Tiger and their habitat.</div>
+            </div>
+        </div>
+        <br />
+        <div class="boxtext-noncenter">
+            <font size="7px">&#8220;</font><br />
+            <font size="5px">
+                Fewer than <strong>600 Sumatran tigers</strong> are estimated to
+                remain in the wild. They are listed as
+                <strong>Critically Endangered</strong> on the IUCN Red List of
+                Threatened Species due to poaching, habitat loss and
+                human-wildlife conflict. The Sumatran tiger is found only on the
+                Indonesian island after which it is named. </font
+            ><br />
+            <font size="7px">&#8221;</font><br />
+            <font size="3px">
+                <a
+                    href="https://www.fauna-flora.org/species/sumatran-tiger/#:~:text=Fewer%20than%20600%20Sumatran%20tigers,after%20which%20it%20is%20named."
+                    ><i>flora-fauna.com</i>
+                </a>
+            </font>
+        </div>
+        <br />
+        <div class="boxtext-container">
+            <div class="boxtext-singlets-left">
+                <font size="7px">&#8221;</font><br />
+                <font size="5px">
+                    An adult Sumatran tiger weighs <b>260 pounds</b> on average
+                    and measures up to <b>8-feet long</b>. They are actually the
+                    smallest of the tiger subspecies. Other species of tigers
+                    can weigh up to 660 pounds and can get up to 10-feet long. </font
+                ><br />
+                <font size="7px">&#8221;</font><br />
+                <font size="3px">
+                    <a
+                        href="https://www.redpandabooks.com/post/5-fun-facts-sumatran-tigers"
+                    ></a
+                    ><i>redpandabooks.com</i></font
+                >
+            </div>
+            <div class="boxtext-singlets-right">
+                <br />
+                <font size="7px">&#8221;</font><br />
+                <font size="5px">
+                    Sumatran tigers have the narrowest black stripes of any
+                    tiger subspecies and they're also the darkest in orange
+                    compared to other subspecies. This is because they are
+                    ambush predators in the Indonesian jungle and need to blend
+                    in amongst the thick vegetation so it helps with camouflage.
+                    No two tigers have the exact same set of markings, making
+                    them identifiable by their uniquely patterned coats. </font
+                ><br />
+                <font size="7px">&#8221;</font><br />
+                <font size="3px">
+                    <a
+                        href="https://www.londonzoo.org/whats-here/animals/sumatran-tiger"
+                        ><i>londonzoo.org</i></a
+                    ></font
+                >
+            </div>
+            <br />
+        </div>
+        <div class="boxtext-head">
+            <font size="5">
+                <img src="/source/assets/tiger_sym.png" width="24" />
+                <b>Many ways to help them!</b>
+                <img src="/source/assets/tiger_sym.png" width="24" />
+            </font>
+        </div>
+        <br />
+        <div class="image-container">
+            <div class="gallery">
+                <a
+                    target="_blank"
+                    href="https://harimaukita.or.id/donasi-dan-merchandise/"
+                >
+                    <img
+                        src="/source/assets/site-harimaukita-logo.png"
+                        alt="HarimauKita"
+                        width="600"
+                        height="400"
+                    />
+                </a>
+                <div class="desc">HarimauKita.</div>
+            </div>
+            <div class="gallery">
+                <a
+                    target="_blank"
+                    href="https://demo.supporterwwf.org/donation/1/wwf-warrior/tiger-warrior.html"
+                >
+                    <img
+                        src="/source/assets/wwflogo.png"
+                        alt="WWF"
+                        width="600"
+                        height="400"
+                    />
+                </a>
+                <div class="desc">Tiger Warrior - WWF Indonesia.</div>
+            </div>
+        </div>
+        <div class="boxtext-head">
+            <font size="5">
+                <img src="/source/assets/tiger_sym.png" width="24" />
+                <b>Media Center</b>
+                <img src="/source/assets/tiger_sym.png" width="24" />
+            </font>
+        </div>
+        <br />
+        <center>
+            <iframe
+                width="320"
+                height="240"
+                src="https://www.youtube.com/embed/wb2RfxUj_BQ?=1&mute=1&loop=1"
+                frameborder="0"
+            ></iframe
+            ><br />
+        </center>
+        <br />
+        <center>
+            <iframe
+                width="320"
+                height="240"
+                src="https://www.youtube.com/embed/b6GbQiStU1I?=1&mute=1&loop=1"
+                frameborder="0"
+            ></iframe
+            ><br />
+        </center>
+        <br />
+    </body>
+    <footer>
+        <p>
+            This site was entirely made for fan purposes only, any DMCAs will be
+            taken seriously.<br />&nbsp;<br />
+            &copy; <b>2024 HYPERGRYPH, Yostar, and Montage Studio.</b>
+        </p>
+        Optimised for mobile view, please switch into mobile device for full
+        experience.
+    </footer>
+</html>
